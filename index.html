@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Task</title>
+    <link rel="stylesheet" href="/activity2/style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8fc;
+    text-align: center;
+    width: 100%;
+}
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    margin: 5px 0;
+}
+header h1 {
+    font-size: 1.5rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 15px;
+    white-space: nowrap;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 190px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card :nth-child(odd) {
+    justify-self: start;
+}
+.card :nth-child(even) {
+    justify-self: end;
+}
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.card p {
+    font-size: 0.9rem;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+}
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration:line-through white;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Your Website Task</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="card-container">
+        <div class="card">
+            <h2>About CSS</h2>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and
+                more.</p>
+        </div>
+        <div class="card">
+            <h2>Box Model</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders,
+                padding, and the actual content.</p>
+            </div>
+            <div class="card">
+                <h2>Responsive Design</h2>
+                <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+            </div>
+    </section>
+    <footer>
+        <p>Created by [Avinash Kumar Thakur] | Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a
+                href="#">LinkedIn</a></p>
+    </footer>
+</body>
+
+</html>
